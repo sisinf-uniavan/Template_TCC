@@ -1,0 +1,104 @@
+% ----------------------------------------------------------
+\chapter{FUNDAMENTAÇÃO TEÓRICA} \label{cap:Fundamentacao}
+% ----------------------------------------------------------
+Para o desenvolvimento deste capítulo, como o próprio título sugere, é importante o uso de referências bibliográficas!
+
+A fundamentação teórica do trabalho tem a finalidade de descrever os conceitos e tecnologias utilizados no desenvolvimento (Capítulo \ref{cap:desenvolvimento}). A estrutura de seções deste capítulo varia em função das características de cada trabalho, e deve ser definida junto com o orientador nos primeiros encontros da disciplina.
+
+Evite utilizar citações diretas, especialmente citações com recuo (mais de 3 linhas). O uso exagerado deste tipo de citação revela a falta das habilidades de síntese e escrita. As citações diretas devem ser utilizadas em casos absolutamente necessários, e devem conter, além do ano de publicação, a página que o texto foi extraído.
+
+Você também deve evitar a citação de um único autor ao longo do texto, por exemplo:
+Segundo \textcite{da2005metodologia}, ….
+
+Os sistemas de informação…para cada caso \cite{da2005metodologia} .
+
+\textcite{da2005metodologia} entendem que…
+
+Isto pode configurar plágio, ainda que citado o autor!
+
+O caderno “Metodologia de Pesquisa Científica”, disponível no material de apoio da disciplina, explica como fazer citações diretas e indiretas conforme as normas da \gls{ABNT}.
+
+Cabe destacar que este capítulo não é obrigatório. No entanto, caso ele não esteja presente no TCC, os conceitos de tecnologias utilizados no desenvolvimento devem estar bem aprofundados na introdução (Capítulo \ref{cap:Introducao}).
+
+% ----------------------------------------------------------
+\section{CONCEITOS EXPLORADOS NO TRABALHO}\label{sec:conceitos}
+% ----------------------------------------------------------
+
+Para cada conceito explorado no trabalho, você deve criar nova uma seção como esta, por exemplo: “2.1 INTERNET DAS COISAS”.
+
+% ----------------------------------------------------------
+\section{TECNOLOGIAS UTILIZADAS NO DESENVOLVIMENTO}\label{sec:tecnologias}
+% ----------------------------------------------------------
+
+Para cada tecnologia utilizada no desenvolvimento, você deve criar uma nova seção como esta, por exemplo: “2.2 PLATAFORMA ARDUINO”.
+
+% ----------------------------------------------------------
+\section{Exemplo citação longa em Látex} \label{}
+% ----------------------------------------------------------
+
+
+\begin{citacao}
+	Após a ilustração, na parte inferior, indicar a fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor), legenda, notas e outras informações necessárias à sua compreensão (se houver). A ilustração deve ser citada no texto e inserida o mais próximo possível do texto a que se refere. \cite[p. 11]{gil2008metodos}.
+\end{citacao}
+
+% ----------------------------------------------------------
+\section{Exemplo Equações e fórmulas em Látex}
+% ----------------------------------------------------------
+
+As equações e fórmulas devem ser destacadas no texto para facilitar a leitura. Para numerá-las, usar algarismos arábicos entre parênteses e alinhados à direita. Pode-se adotar uma entrelinha maior do que a usada no texto.
+
+Exemplos, \ref{eq:Eq_1} e \ref{eq:Eq_2}.
+
+\begin{equation}\label{eq:Eq_1}
+C = 2 \pi r
+\end{equation}
+
+\begin{equation}\label{eq:Eq_2}
+\gls{A} = \gls{pi} \gls{r}^2
+\end{equation}
+
+
+% ----------------------------------------------------------
+\section{Exemplo Código-Fonte}
+% ----------------------------------------------------------
+
+Os trechos de código devem ser exibidos em formatação de código com linhas enumeradas sequenciais a esquerda para falicitar os comentários. Abaixo segue exemplos carregando o código através de um arquivo e digitando diretamente no texto.
+
+\lstinputlisting[
+    language=C, % Defina a linguagem do código
+    numbers=left, % Exibir números de linha à esquerda
+    %linerange={23-66}, % Defina os intervalos de linhas
+    firstnumber={1}, % Números iniciais correspondentes aos intervalos
+    stepnumber=1, % Incremento do número de linha
+    caption={Exemplo carregando arquivo...},
+    label=src:sample_c
+]{sources/sample.c}
+
+\begin{lstlisting}[language=json, caption={Exemplo de Dados JSON}, label={src:json}]
+    {
+        "name": "John Doe",
+        "age": 30,
+        "address": {
+            "street": "1234 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        },
+        "phoneNumbers": [
+            {"type": "home", "number": "555-1234"},
+            {"type": "work", "number": "555-5678"}
+        ]
+    }
+    \end{lstlisting}
+
+
+\begin{lstlisting}[language=C, caption={Exemplo digitado no texto}, label={src:codigo_2}]
+	#include <stdio.h>
+	
+	void main(){
+		printf("Olá Mundo!");
+	}
+	\end{lstlisting}
+
+Exemplos, \ref{src:sample_c}, \ref{src:json} e \ref{src:codigo_2}.
+
