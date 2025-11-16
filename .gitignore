@@ -1,0 +1,36 @@
+# Latex
+*.aux
+.DS_Store
+*.ilg
+*.idx
+*.ind
+*.log
+*.xml
+*.gz
+*.fdb_latexmk
+*.fls
+*.synctex*
+*.bbl
+*.blg
+*.vvl
+*.bcf
+*.toc
+*.nav
+*.out
+*.snm
+*.vrb
+*.loc
+*.lof
+*.lot
+*.vscode
+main.pdf
+
+# Compilador (CCS, TI, etc.)
+**/debug/
+**/targetConfigs/
+**/.launches/
+**/FLASH/
+**/RAM/
+**/CPU1_RAM/
+**/CPU1_FLASH/
+**/.settings/
